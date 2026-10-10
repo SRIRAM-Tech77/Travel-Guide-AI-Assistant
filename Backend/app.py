@@ -106,5 +106,5 @@ def generate_audio_guide():
     encoded_audio = base64.b64encode(audio_bytes).decode('utf-8')
 
     return {"description": text_description, "audioBase64": encoded_audio}
-    
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
