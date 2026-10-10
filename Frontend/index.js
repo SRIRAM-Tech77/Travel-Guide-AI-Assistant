@@ -147,9 +147,14 @@ generateButton.addEventListener('click', async () => {
       })
     });
 
-    if (!response.ok) throw new Error('Generation failed');
+    const responseText = await response.text();
+console.log("Backend response:", response.status, responseText);
 
-    const data = await response.json();
+if (!response.ok) {
+  throw new Error(`Backend error ${response.status}: ${responseText}`);
+}
+
+const data = JSON.parse(responseText);
 
     // Update UI with Result
     transcriptText.textContent = data.description;
