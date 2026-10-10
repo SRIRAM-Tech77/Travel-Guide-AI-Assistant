@@ -125,7 +125,7 @@ voiceButtons.forEach(btn => {
 
 // Generate Audio guide button Logic
 
-const GENERATE_AUDIO_GUIDE_API_URL = "http://127.0.0.1:5000/generate-audio-guide";
+const GENERATE_AUDIO_GUIDE_API_URL = "https://travel-guide-ai-assistant.onrender.com/generate-audio-guide";
 
 generateButton.addEventListener('click', async () => {
   generateButton.disabled = true;
