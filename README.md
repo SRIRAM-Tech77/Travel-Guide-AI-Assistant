@@ -2,7 +2,7 @@
 
 A web-based travel guide application designed to help users explore travel-related information through an interactive frontend and a Python-powered backend.
 
-## Live Demo
+## Live Demo: https://travel-guide-ai-h8fy.onrender.com
 
 **Live Application:** 
 
